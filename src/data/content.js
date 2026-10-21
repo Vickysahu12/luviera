@@ -110,13 +110,6 @@ export const journal = [
   { date: '2 Sep 2026', title: 'The art of gift giving', image: 'j10-1', to: '/#gifts' },
 ]
 
-export const instagram = {
-  handle: '@luviera.jewels',
-  tag: '#ALittleMoreLuxurious',
-  href: 'https://instagram.com',
-  images: ['j35-1', 'j40-1', 'j17-1', 'j37-1', 'j28-1', 'j50-1'],
-}
-
 export const offers = [
   { title: '10% off your first piece', code: 'LUXE10' },
   { title: '₹500 off orders above ₹4,999', code: 'GIFT500' },
