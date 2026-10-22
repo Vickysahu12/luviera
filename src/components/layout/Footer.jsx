@@ -4,7 +4,6 @@ import { site } from '../../config/site'
 import { perks } from '../../data/content'
 import { subscribe } from '../../services/newsletter'
 import { Icon } from '../ui/Icon'
-import { Logo } from './Logo'
 
 const YEAR = new Date().getFullYear()
 const PAYMENTS = ['UPI', 'Visa', 'Mastercard', 'RuPay', 'COD']
@@ -80,8 +79,15 @@ export function Footer() {
       </ul>
 
       <div className="mt-16 bg-ink text-cream">
-        <div className="shell pt-14 lg:pt-20">
-          <Logo full className="block w-full max-w-[560px]" />
+        <div className="shell flex items-center gap-5 pt-14 lg:pt-16">
+          <Link to="/" aria-label={`${site.name} home`} className="press group shrink-0">
+            <img src="/brand/footer-mark.png" alt={site.name} width={480} height={418} loading="lazy" draggable={false} className="h-20 w-auto transition-transform duration-500 ease-[var(--ease-spring)] group-hover:-rotate-3 lg:h-24" />
+          </Link>
+          <span className="h-14 w-px bg-cream/15" aria-hidden="true" />
+          <p className="caps text-[10.5px] leading-relaxed text-cream/70">
+            {site.name}
+            <span className="block text-cream/50">{site.tagline}</span>
+          </p>
         </div>
         <div className="shell grid gap-12 py-14 lg:grid-cols-[1.1fr_2fr_1.6fr] lg:gap-10 lg:py-16">
           <div>
